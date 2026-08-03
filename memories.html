@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories - Friendship Story</title>
+    <meta name="description" content="Explore our full collection of friendship memories, photos, road trips, and special moments.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg class="logo-heart-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="logo-text">Friendship</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="memories.html" class="active">Memories</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#letters">Letters</a></li>
+            <li><a href="index.html#playlist">Our Playlist</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                <i class="fa-regular fa-sun sun-icon"></i>
+                <i class="fa-regular fa-moon moon-icon"></i>
+            </button>
+
+            <!-- Cute Stubs / Sticker Badges -->
+            <div class="cute-stubs-wrapper">
+                <span class="cute-stub stub-pink">Besties Forever 💕</span>
+                <span class="cute-stub stub-yellow">Since Day One ✨</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <header class="memories-header">
+        <div class="memories-header-content">
+            <h1 class="memories-page-title">
+                Our Special <span class="highlight">Memories</span> 📸
+            </h1>
+            <p class="memories-page-subtitle">
+                A vault of every laugh, road trip, late-night chat, and unforgettable moment we've shared together.
+            </p>
+            
+            <!-- Category Filter Pills -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All Memories ✨</button>
+                <button class="filter-btn" data-filter="trips">Trips & Mountains 🏔️</button>
+                <button class="filter-btn" data-filter="nights">Late Nights 🌙</button>
+                <button class="filter-btn" data-filter="food">Food & Laughs 🍕</button>
+                <button class="filter-btn" data-filter="beach">Beach Days 🏖️</button>
+            </div>
+        </div>
+
+        <!-- Header SVG Doodles -->
+        <div class="doodle doodle-star-top" style="top: 20px; left: 300px;">
+            <svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <path d="M16 3 L19.5 11 L28 12.5 L21.5 18.5 L23.5 27 L16 22.5 L8.5 27 L10.5 18.5 L4 12.5 L12.5 11 Z"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Full Memories Grid Section -->
+    <main class="memories-main-section">
+        <div class="memories-full-grid" id="full-memories-container">
+            <!-- Memory Item 1 -->
+            <div class="memory-card-box" data-category="trips" data-title="Sunset Chasers" data-img="https://images.unsplash.com/photo-1506869640319-ce1a44fbc757?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506869640319-ce1a44fbc757?auto=format&fit=crop&q=80&w=600" alt="Sunset Chasers">
+                    <span class="memory-badge">Golden Hour</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Sunset Chasers 🌅</h3>
+                    <p>Watching the sun go down with the best company.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 2 -->
+            <div class="memory-card-box" data-category="trips" data-title="Trip to Mountains" data-img="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600" alt="Trip to Mountains">
+                    <span class="memory-badge">Adventure</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Trip to Mountains 🏔️</h3>
+                    <p>Reaching the peak together after an endless hike.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 3 -->
+            <div class="memory-card-box" data-category="trips" data-title="Long Drives" data-img="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=600" alt="Long Drives">
+                    <span class="memory-badge">Road Trip</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Long Drives 🚗</h3>
+                    <p>Windows down, favorite playlist on repeat.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 4 -->
+            <div class="memory-card-box" data-category="nights" data-title="Random Nights" data-img="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=600" alt="Random Nights">
+                    <span class="memory-badge">Late Night</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Random Nights 🌙</h3>
+                    <p>Unplanned hangouts that turn into core memories.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 5 -->
+            <div class="memory-card-box" data-category="trips" data-title="Old Memories" data-img="https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?auto=format&fit=crop&q=80&w=600" alt="Old Memories">
+                    <span class="memory-badge">Throwback</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Old Memories 📷</h3>
+                    <p>Looking back at where our friendship started.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 6 -->
+            <div class="memory-card-box" data-category="beach" data-title="Beach Day" data-img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=600" alt="Beach Day">
+                    <span class="memory-badge">Summer</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Beach Day 🏖️</h3>
+                    <p>Salty air, ocean waves, and sun-tanned smiles.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 7 -->
+            <div class="memory-card-box" data-category="food" data-title="Food & Laughter" data-img="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=600" alt="Food & Laughter">
+                    <span class="memory-badge">Foodies</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Food & Laughter 🍕</h3>
+                    <p>Sharing pizza and inside jokes until our stomachs hurt.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 8 -->
+            <div class="memory-card-box" data-category="nights" data-title="Forever Us" data-img="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&q=80&w=600" alt="Forever Us">
+                    <span class="memory-badge">Besties</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Forever Us 💖</h3>
+                    <p>Through every season, best friends forever.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 9 -->
+            <div class="memory-card-box" data-category="nights" data-title="Coffee Talks" data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600" alt="Coffee Talks">
+                    <span class="memory-badge">Cozy</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Coffee Talks ☕</h3>
+                    <p>Warm mugs and heart-to-heart conversations.</p>
+                </div>
+            </div>
+
+            <!-- Memory Item 10 -->
+            <div class="memory-card-box" data-category="nights" data-title="Campfire & Stars" data-img="https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&q=80&w=800">
+                <div class="memory-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&q=80&w=600" alt="Campfire & Stars">
+                    <span class="memory-badge">Camping</span>
+                </div>
+                <div class="memory-info">
+                    <h3>Campfire & Stars ✨</h3>
+                    <p>Stargazing around the warm crackling fire.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Bar -->
+    <footer class="footer">
+        <div class="footer-left">
+            <svg class="footer-star-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 0Z"/>
+            </svg>
+            <span>Partners in crime<br>since day one. <span class="footer-heart-outline">♡</span></span>
+        </div>
+
+        <div class="footer-center">
+            <span>Made with <i class="fa-solid fa-heart footer-pink-heart"></i> for my best friend</span>
+        </div>
+
+        <div class="footer-right">
+            <span>Keep smiling, keep shining. ✨<br><em class="footer-subtext">I'm always here for you.</em></span>
+            <svg class="footer-arrow-doodle" width="45" height="18" viewBox="0 0 45 18" fill="none" stroke="currentColor">
+                <path d="M 2 12 Q 22 2 38 10" stroke-width="1.8" stroke-dasharray="3,3"/>
+                <path d="M 32 6 L 42 10 L 35 16" stroke-width="1.8" fill="none"/>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="gallery-modal" class="modal-overlay">
+        <div class="modal-card gallery-modal-card">
+            <button class="close-modal-btn" id="close-gallery-btn" aria-label="Close">&times;</button>
+            <h3 id="gallery-modal-title" class="gallery-modal-title">Memory Preview</h3>
+            <div class="gallery-modal-img-container">
+                <button class="gallery-nav-btn prev-btn" id="prev-memory-btn" aria-label="Previous Memory">&#10094;</button>
+                <img id="gallery-modal-img" src="" alt="Memory preview">
+                <button class="gallery-nav-btn next-btn" id="next-memory-btn" aria-label="Next Memory">&#10095;</button>
+            </div>
+            <div class="gallery-modal-footer">
+                <span id="gallery-counter" class="gallery-counter">1 of 10</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Category filtering logic on memories.html
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const memoryBoxes = document.querySelectorAll('.memory-card-box');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.getAttribute('data-filter');
+                    memoryBoxes.forEach(box => {
+                        if (category === 'all' || box.getAttribute('data-category') === category) {
+                            box.style.display = 'flex';
+                        } else {
+                            box.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

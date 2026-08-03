@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Friendship, Our Story</title>
+    <meta name="description" content="A special personal space to celebrate friendship, memories, photos, and unforgettable moments.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <svg class="logo-heart-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="logo-text">Friendship</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="memories.html">Memories</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#letters">Letters</a></li>
+            <li><a href="#playlist">Our Playlist</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                <i class="fa-regular fa-sun sun-icon"></i>
+                <i class="fa-regular fa-moon moon-icon"></i>
+            </button>
+
+            <!-- Cute Stubs / Sticker Badges -->
+            <div class="cute-stubs-wrapper">
+                <span class="cute-stub stub-pink">Besties Forever 💕</span>
+                <span class="cute-stub stub-yellow">Since Day One ✨</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- SVG Doodles in Hero -->
+        <div class="doodle doodle-star-top">
+            <svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 3 L19.5 11 L28 12.5 L21.5 18.5 L23.5 27 L16 22.5 L8.5 27 L10.5 18.5 L4 12.5 L12.5 11 Z"/>
+            </svg>
+        </div>
+
+        <div class="doodle doodle-heart-top">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+        </div>
+
+        <div class="doodle doodle-heart-mid">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <h3 class="greeting">Hey Bestie! 👋</h3>
+            <h1 class="main-title">
+                Our Friendship,<br>
+                Our <span class="highlight">Story</span>
+                <span class="title-heart">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </span>
+            </h1>
+            <p class="hero-desc">
+                This little space is just for us. A place to store our craziest memories, inside jokes, and all the moments that make our friendship special. Forever & Always! 💛
+            </p>
+            <a href="memories.html" class="primary-btn" id="view-memories-btn">
+                <i class="fa-regular fa-images"></i> View Our Memories
+            </a>
+
+            <!-- Paper Airplane (Telegram) Doodle with Loopy Path -->
+            <div class="doodle doodle-paper-plane">
+                <svg width="150" height="70" viewBox="0 0 150 70" fill="none" stroke="currentColor">
+                    <path d="M 10 50 C 40 75 70 65 80 45 C 90 25 70 15 60 30 C 50 45 75 55 115 28" stroke-width="1.6" stroke-dasharray="3,3" fill="none" stroke-linecap="round"/>
+                    <g transform="translate(110, 10) rotate(-15)">
+                        <path d="M 0 15 L 25 0 L 18 22 L 10 17 L 5 22 Z" fill="none" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="M 25 0 L 10 17" fill="none" stroke-width="1.4"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Hero Polaroids Stack -->
+        <div class="hero-polaroids">
+            <!-- Polaroid 1 -->
+            <div class="polaroid p1" data-caption="Coffee Talks ☕" data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600">
+                <div class="tape tape-yellow"></div>
+                <span class="polaroid-stub-sticker stub-blue">Coffee Vibes ☕</span>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=500" alt="Coffee Mugs">
+                </div>
+                <p class="polaroid-caption">Coffee Talks ☕</p>
+            </div>
+
+            <!-- Polaroid 2 (Main Center) -->
+            <div class="polaroid p2 main-polaroid" data-caption="Good Times ♡" data-img="https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?auto=format&fit=crop&q=80&w=800">
+                <div class="tape tape-pink"></div>
+                <span class="polaroid-stub-sticker stub-pink">Pure Magic ✨</span>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?auto=format&fit=crop&q=80&w=600" alt="Good Times">
+                </div>
+                <p class="polaroid-caption lg-caption">Good Times <span class="caption-heart">♡</span></p>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div class="polaroid p3" data-caption="Endless Nights ✨" data-img="https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&q=80&w=600">
+                <div class="tape tape-purple"></div>
+                <span class="polaroid-stub-sticker stub-purple">Night Owls 🌙</span>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&q=80&w=500" alt="Endless Nights">
+                </div>
+                <p class="polaroid-caption">Endless Nights ✨</p>
+            </div>
+
+            <!-- Top Right Arrow Doodle -->
+            <div class="doodle doodle-arrow-topright">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M 4 20 L 20 4 M 20 4 H 12 M 20 4 V 12 M 2 18 L 6 22"/>
+                </svg>
+            </div>
+
+            <!-- Shine Lines Doodle Right of Polaroid 3 -->
+            <div class="doodle doodle-shine-lines">
+                <svg width="24" height="30" viewBox="0 0 24 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M 4 5 Q 12 8 20 5 M 4 15 Q 14 18 22 15 M 6 25 Q 13 28 18 25"/>
+                </svg>
+            </div>
+
+            <!-- Heart Doodle Bottom Right below Polaroid 3 -->
+            <div class="doodle doodle-heart-bottomright">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content 3-Column Grid -->
+    <main class="content-grid">
+        <!-- Column 1: About Us Card -->
+        <section class="card about-card" id="about">
+            <span class="card-stub-badge stub-yellow">🌸 100% Real</span>
+            <div class="card-header">
+                <h2 class="section-title text-accent-about">About Us</h2>
+                <span class="header-heart-icon text-accent-about">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </span>
+            </div>
+            <p class="about-text">
+                We met, we laughed, we clicked! From random talks to deep conversations, from crazy plans to unplanned adventures – thank you for being my person through it all. <span class="about-emoji">🌸</span>
+            </p>
+            <div class="about-doodle-container">
+                <svg class="about-swoosh" width="110" height="50" viewBox="0 0 110 50" fill="none">
+                    <path d="M 10 38 Q 55 8 100 25" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4"/>
+                    <path d="M 88 15 L 102 26 L 85 35" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <span class="about-large-heart text-accent-about">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </span>
+            </div>
+        </section>
+
+        <!-- Column 2: Our Memories Card -->
+        <section class="card memories-card" id="memories">
+            <span class="card-stub-badge stub-pink">📸 Best Moments</span>
+            <div class="card-header">
+                <h2 class="section-title text-accent-memories">Our Memories</h2>
+                <a href="memories.html" class="view-all text-accent-memories" id="open-gallery-modal">View All &rarr;</a>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-title="Sunset Chasers" data-img="https://images.unsplash.com/photo-1506869640319-ce1a44fbc757?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1506869640319-ce1a44fbc757?auto=format&fit=crop&q=80&w=300" alt="Sunset Chasers">
+                    </div>
+                    <span class="gallery-label">Sunset Chasers</span>
+                </div>
+                <div class="gallery-item" data-title="Trip to Mountains" data-img="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=300" alt="Trip to Mountains">
+                    </div>
+                    <span class="gallery-label">Trip to Mountains</span>
+                </div>
+                <div class="gallery-item" data-title="Long Drives" data-img="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=300" alt="Long Drives">
+                    </div>
+                    <span class="gallery-label">Long Drives</span>
+                </div>
+                <div class="gallery-item" data-title="Random Nights" data-img="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=300" alt="Random Nights">
+                    </div>
+                    <span class="gallery-label">Random Nights</span>
+                </div>
+                <div class="gallery-item" data-title="Old Memories" data-img="https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?auto=format&fit=crop&q=80&w=300" alt="Old Memories">
+                    </div>
+                    <span class="gallery-label">Old Memories</span>
+                </div>
+                <div class="gallery-item" data-title="Beach Day" data-img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=300" alt="Beach Day">
+                    </div>
+                    <span class="gallery-label">Beach Day</span>
+                </div>
+                <div class="gallery-item" data-title="Food & Laughter" data-img="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=300" alt="Food & Laughter">
+                    </div>
+                    <span class="gallery-label">Food & Laughter</span>
+                </div>
+                <div class="gallery-item" data-title="Forever Us" data-img="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&q=80&w=800">
+                    <div class="gallery-img-box">
+                        <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&q=80&w=300" alt="Forever Us">
+                    </div>
+                    <span class="gallery-label">Forever Us</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Column 3: Why You Are Special Card -->
+        <section class="card special-card">
+            <span class="card-stub-badge stub-blue">⭐ Irreplaceable</span>
+            <div class="card-header">
+                <div class="title-wrapper">
+                    <h2 class="section-title text-accent-special">Why You Are Special</h2>
+                    <svg class="title-underline-doodle text-accent-special" width="140" height="10" viewBox="0 0 140 10" fill="none">
+                        <path d="M 4 7 Q 70 2 136 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="header-heart-icon text-accent-special">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </span>
+            </div>
+
+            <ul class="special-list">
+                <li>
+                    <i class="fa-solid fa-heart bullet bullet-yellow"></i>
+                    <span>You understand me without words.</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-heart bullet bullet-blue"></i>
+                    <span>You're my therapist, cheerleader & partner-in-crime.</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-heart bullet bullet-green"></i>
+                    <span>You make the bad days better.</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-heart bullet bullet-purple"></i>
+                    <span>You're simply irreplaceable.</span>
+                </li>
+            </ul>
+
+            <div class="special-doodle-container">
+                <span class="special-large-heart text-accent-special">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </span>
+                <div class="sparkle-lines text-accent-special">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 0v6M12 18v6M0 12h6M18 12h6"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Bar -->
+    <footer class="footer">
+        <div class="footer-left">
+            <svg class="footer-star-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 0Z"/>
+            </svg>
+            <span>Partners in crime<br>since day one. <span class="footer-heart-outline">♡</span></span>
+        </div>
+
+        <div class="footer-center">
+            <span>Made with <i class="fa-solid fa-heart footer-pink-heart"></i> for my best friend</span>
+        </div>
+
+        <div class="footer-right">
+            <span>Keep smiling, keep shining. ✨<br><em class="footer-subtext">I'm always here for you.</em></span>
+            <svg class="footer-arrow-doodle" width="45" height="18" viewBox="0 0 45 18" fill="none" stroke="currentColor">
+                <path d="M 2 12 Q 22 2 38 10" stroke-width="1.8" stroke-dasharray="3,3"/>
+                <path d="M 32 6 L 42 10 L 35 16" stroke-width="1.8" fill="none"/>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Gallery Lightbox Modal with Slideshow Controls -->
+    <div id="gallery-modal" class="modal-overlay">
+        <div class="modal-card gallery-modal-card">
+            <button class="close-modal-btn" id="close-gallery-btn" aria-label="Close">&times;</button>
+            <h3 id="gallery-modal-title" class="gallery-modal-title">Memory Preview</h3>
+            <div class="gallery-modal-img-container">
+                <button class="gallery-nav-btn prev-btn" id="prev-memory-btn" aria-label="Previous Memory">&#10094;</button>
+                <img id="gallery-modal-img" src="" alt="Memory preview">
+                <button class="gallery-nav-btn next-btn" id="next-memory-btn" aria-label="Next Memory">&#10095;</button>
+            </div>
+            <div class="gallery-modal-footer">
+                <span id="gallery-counter" class="gallery-counter">1 of 8</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
