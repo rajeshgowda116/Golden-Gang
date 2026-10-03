@@ -1126,24 +1126,23 @@ button {
 @media (max-width: 1200px) {
     .content-grid {
         grid-template-columns: 1fr;
+        margin-top: 1rem;
     }
 
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 2rem 2rem 4rem;
+        padding: 2rem 2rem 2rem;
+        min-height: auto;
     }
 
     .hero-content {
-        margin-bottom: 3.5rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
     }
 
     .doodle-paper-plane, .doodle-star-top, .doodle-heart-top, .doodle-heart-mid {
         display: none;
-    }
-
-    .hero-polaroids {
-        transform: scale(0.85);
     }
 
     .footer {
@@ -1181,22 +1180,73 @@ button {
     }
 
     .hero {
-        padding: 1.5rem 1rem 3rem;
+        padding: 1.5rem 1rem 2rem;
     }
 
     .main-title {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
 
     .highlight {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
+    /* True Responsive Polaroid Layout for Mobile - NO Scale Overlapping! */
     .hero-polaroids {
-        transform: scale(0.72);
+        position: relative;
         width: 100%;
-        height: 340px;
-        margin-top: -1rem;
+        max-width: 320px;
+        height: 250px;
+        margin: 1rem auto 2.5rem;
+        transform: none;
+    }
+
+    .p1 {
+        width: 150px;
+        left: 0;
+        top: 25px;
+        transform: rotate(-8deg);
+        padding: 8px 8px 32px 8px;
+    }
+
+    .p2 {
+        width: 200px;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%) rotate(2deg);
+        padding: 10px 10px 38px 10px;
+    }
+
+    .p3 {
+        width: 150px;
+        right: 0;
+        top: 30px;
+        transform: rotate(8deg);
+        padding: 8px 8px 32px 8px;
+    }
+
+    .polaroid-caption {
+        font-size: 1.2rem;
+        bottom: 4px;
+    }
+
+    .lg-caption {
+        font-size: 1.4rem;
+        bottom: 4px;
+    }
+
+    .polaroid-stub-sticker {
+        font-size: 0.8rem;
+        padding: 0.15rem 0.45rem;
+        top: 5px;
+        right: -5px;
+    }
+
+    .content-grid {
+        margin-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1.8rem;
     }
 
     .gallery-grid {
@@ -1205,7 +1255,7 @@ button {
     }
 
     .memories-full-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 1rem;
     }
 
@@ -1214,7 +1264,7 @@ button {
     }
 
     .memory-img-wrapper {
-        height: 160px;
+        height: 150px;
     }
 
     .memory-info {
@@ -1229,7 +1279,7 @@ button {
         font-size: 0.8rem;
     }
 
-    .content-grid, .memories-main-section, .memories-header, .footer {
+    .memories-main-section, .memories-header, .footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -1275,16 +1325,34 @@ button {
 
 @media (max-width: 480px) {
     .main-title {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
     .highlight {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .hero-polaroids {
-        transform: scale(0.58);
-        height: 290px;
+        max-width: 280px;
+        height: 220px;
+        margin: 0.8rem auto 2rem;
+    }
+
+    .p1 {
+        width: 130px;
+        left: -5px;
+        top: 20px;
+    }
+
+    .p2 {
+        width: 175px;
+        top: 0px;
+    }
+
+    .p3 {
+        width: 130px;
+        right: -5px;
+        top: 25px;
     }
 
     .category-filters {
