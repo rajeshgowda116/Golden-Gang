@@ -1380,3 +1380,55 @@ button {
     50% { transform: scale(1.02); box-shadow: 0 0 25px rgba(251, 191, 36, 0.6); }
     100% { transform: scale(1); box-shadow: var(--card-shadow); }
 }
+
+/* ---- Smooth Scroll Reveal Animations ---- */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Staggered delay for grid cards */
+.gallery-grid .gallery-item:nth-child(4n+1),
+.memories-full-grid .memory-card-box:nth-child(4n+1) { transition-delay: 0.04s; }
+.gallery-grid .gallery-item:nth-child(4n+2),
+.memories-full-grid .memory-card-box:nth-child(4n+2) { transition-delay: 0.08s; }
+.gallery-grid .gallery-item:nth-child(4n+3),
+.memories-full-grid .memory-card-box:nth-child(4n+3) { transition-delay: 0.12s; }
+.gallery-grid .gallery-item:nth-child(4n+0),
+.memories-full-grid .memory-card-box:nth-child(4n+0) { transition-delay: 0.16s; }
+
+/* Momentum Smooth Scrolling Containers */
+.gallery-grid, .memories-full-grid, .nav-links {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+}
+
+/* Gentle Floating Animations for Hero Polaroids */
+@media (min-width: 769px) {
+    @keyframes floatP1 {
+        0% { transform: rotate(-10deg) translateY(0px); }
+        100% { transform: rotate(-8deg) translateY(-8px); }
+    }
+
+    @keyframes floatP2 {
+        0% { transform: rotate(2deg) translateY(0px); }
+        100% { transform: rotate(4deg) translateY(-10px); }
+    }
+
+    @keyframes floatP3 {
+        0% { transform: rotate(12deg) translateY(0px); }
+        100% { transform: rotate(10deg) translateY(-8px); }
+    }
+
+    .p1 { animation: floatP1 4.5s ease-in-out infinite alternate; }
+    .p2 { animation: floatP2 4s ease-in-out infinite alternate; }
+    .p3 { animation: floatP3 5s ease-in-out infinite alternate; }
+}
