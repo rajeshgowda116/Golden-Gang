@@ -1432,3 +1432,441 @@ button {
     .p2 { animation: floatP2 4s ease-in-out infinite alternate; }
     .p3 { animation: floatP3 5s ease-in-out infinite alternate; }
 }
+
+/* --------------------------------------------------------------------------
+   LETTERS PAGE DESIGN SYSTEM (Matching Reference Image)
+   -------------------------------------------------------------------------- */
+.letters-header {
+    text-align: center;
+    padding: 3.5rem 4rem 2.5rem;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.letters-page-title {
+    font-family: var(--font-handwriting);
+    font-size: 4.5rem;
+    color: #ec4899;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.title-envelope-svg {
+    font-size: 3.8rem;
+    display: inline-block;
+    transform: rotate(6deg);
+}
+
+.letters-page-subtitle {
+    font-family: var(--font-handwriting);
+    font-size: 2.6rem;
+    color: var(--color-text-main);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.header-pink-heart {
+    color: #ec4899;
+}
+
+.letters-page-desc {
+    font-size: 1.15rem;
+    color: var(--color-text-sub);
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Header Doodles & Annotations */
+.doodle-paper-plane-left {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    color: #f472b6;
+    opacity: 0.85;
+}
+
+.handwriting-annotation {
+    position: absolute;
+    font-family: var(--font-handwriting);
+    font-size: 1.5rem;
+    color: #ec4899;
+    line-height: 1.25;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.annotation-left {
+    left: 50px;
+    top: 110px;
+    transform: rotate(-10deg);
+}
+
+/* Header Sticky Note */
+.sticky-note-header {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 150px;
+    background: #ffe4e6;
+    border-radius: 6px;
+    padding: 1.4rem 1rem 1.1rem;
+    box-shadow: 0 12px 28px rgba(244, 114, 182, 0.22);
+    transform: rotate(6deg);
+    font-family: var(--font-handwriting);
+    font-size: 1.45rem;
+    color: #9f1239;
+    line-height: 1.25;
+    text-align: center;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.sticky-tape {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    width: 55px;
+    height: 22px;
+    background: rgba(254, 205, 211, 0.85);
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.sticky-heart {
+    color: #ec4899;
+    font-size: 1.3rem;
+}
+
+/* Letters Grid Layout */
+.letters-main-section {
+    padding: 0 4rem 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.letters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+
+.letter-card {
+    border-radius: 24px;
+    padding: 1.8rem 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+    cursor: pointer;
+}
+
+.letter-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
+}
+
+/* Card Themes */
+.card-pink {
+    background: linear-gradient(180deg, #fff5f8 0%, #fff0f5 100%);
+    border: 1.8px solid #fbcfe8;
+}
+
+.card-yellow {
+    background: linear-gradient(180deg, #fffdf0 0%, #fffbeb 100%);
+    border: 1.8px solid #fef08a;
+}
+
+.card-purple {
+    background: linear-gradient(180deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1.8px solid #e9d5ff;
+}
+
+.card-rose {
+    background: linear-gradient(180deg, #fff1f2 0%, #ffe4e6 100%);
+    border: 1.8px solid #fecdd3;
+}
+
+[data-theme="dark"] .card-pink {
+    background: linear-gradient(180deg, #24141e 0%, #1a0e16 100%);
+    border: 1.8px solid #4a1d35;
+}
+
+[data-theme="dark"] .card-yellow {
+    background: linear-gradient(180deg, #221c10 0%, #17130a 100%);
+    border: 1.8px solid #483818;
+}
+
+[data-theme="dark"] .card-purple {
+    background: linear-gradient(180deg, #1c1328 0%, #130c1d 100%);
+    border: 1.8px solid #3c1e56;
+}
+
+[data-theme="dark"] .card-rose {
+    background: linear-gradient(180deg, #281218 0%, #1b0a0e 100%);
+    border: 1.8px solid #521927;
+}
+
+/* Envelope Graphic & Animations */
+.envelope-graphic-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    height: 160px;
+}
+
+.envelope-svg {
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.08));
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.letter-card:hover .envelope-svg {
+    transform: translateY(-8px) scale(1.05);
+}
+
+.peaking-letter {
+    transition: transform 0.4s ease;
+}
+
+.letter-card:hover .peaking-letter {
+    transform: translateY(-12px);
+}
+
+/* Card Typography */
+.letter-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.letter-title {
+    font-family: var(--font-handwriting);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.4rem;
+    line-height: 1.1;
+}
+
+.card-pink .letter-title { color: #9f1239; }
+.card-yellow .letter-title { color: #78350f; }
+.card-purple .letter-title { color: #581c87; }
+.card-rose .letter-title { color: #881337; }
+
+[data-theme="dark"] .letter-title {
+    color: #f8fafc !important;
+}
+
+.letter-desc {
+    font-size: 0.94rem;
+    color: #475569;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    max-width: 240px;
+    min-height: 44px;
+}
+
+[data-theme="dark"] .letter-desc {
+    color: #94a3b8;
+}
+
+/* Read Letter Pill Buttons */
+.read-letter-btn {
+    padding: 0.75rem 1.6rem;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 0.98rem;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    width: 100%;
+    max-width: 190px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.btn-pink {
+    background: #f472b6;
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(244, 114, 182, 0.4);
+}
+
+.btn-yellow {
+    background: #fde047;
+    color: #78350f;
+    box-shadow: 0 6px 18px rgba(253, 224, 71, 0.45);
+}
+
+.btn-purple {
+    background: #c084fc;
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(192, 132, 252, 0.4);
+}
+
+.btn-rose {
+    background: #fda4af;
+    color: #881337;
+    box-shadow: 0 6px 18px rgba(253, 164, 175, 0.4);
+}
+
+.read-letter-btn:hover {
+    transform: translateY(-3px) scale(1.04);
+}
+
+/* Letter Modal Reader Styles */
+.letter-modal-card {
+    max-width: 620px;
+    width: 92vw;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.letter-paper {
+    background: #fffdf5;
+    border: 2px solid #fbcfe8;
+    border-radius: 20px;
+    padding: 2.5rem 2.8rem;
+    position: relative;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    font-family: var(--font-handwriting);
+    color: #1e293b;
+    background-image: repeating-linear-gradient(#fffdf5, #fffdf5 35px, #fbcfe8 36px);
+    line-height: 36px;
+}
+
+.letter-paper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+
+.letter-paper-stamp {
+    border: 2px dashed #ec4899;
+    color: #ec4899;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.82rem;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.letter-paper-date {
+    font-size: 1.4rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.letter-paper-title {
+    font-size: 2.8rem;
+    color: #ec4899;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.letter-paper-body p {
+    font-size: 1.6rem;
+    line-height: 36px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 1rem;
+}
+
+.letter-paper-footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.letter-paper-sign {
+    font-size: 2rem;
+    color: #ec4899;
+    font-weight: 700;
+}
+
+.letter-wax-seal {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #f472b6, #ec4899);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
+}
+
+/* Letters Responsive Breakpoints */
+@media (max-width: 1100px) {
+    .letters-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .annotation-left, .sticky-note-header, .doodle-paper-plane-left {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .letters-header {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .letters-page-title {
+        font-size: 3.2rem;
+    }
+
+    .letters-page-subtitle {
+        font-size: 2rem;
+    }
+
+    .letters-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .letters-main-section {
+        padding: 0 1.5rem 3rem;
+    }
+
+    .letter-paper {
+        padding: 1.8rem 1.4rem;
+        background-image: repeating-linear-gradient(#fffdf5, #fffdf5 31px, #fbcfe8 32px);
+        line-height: 32px;
+    }
+
+    .letter-paper-body p {
+        font-size: 1.35rem;
+        line-height: 32px;
+    }
+
+    .letter-paper-title {
+        font-size: 2.2rem;
+    }
+}
