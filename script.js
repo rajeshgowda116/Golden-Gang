@@ -28,17 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Build Memories Array from DOM Items (works on both index.html and memories.html)
     const galleryItems = Array.from(document.querySelectorAll('.gallery-item, .memory-card-box'));
-    const memoryDataList = galleryItems.map(item => {
-        const titleEl = item.querySelector('h3');
-        return {
-            title: item.getAttribute('data-title') || (titleEl ? titleEl.textContent : 'Memory'),
-            imgSrc: item.getAttribute('data-img')
-        };
-    });
+    
+    function getVisibleMemoryData() {
+        const visibleElements = galleryItems.filter(item => getComputedStyle(item).display !== 'none');
+        return visibleElements.map(item => {
+            const titleEl = item.querySelector('h3, .gallery-label');
+            return {
+                title: item.getAttribute('data-title') || (titleEl ? titleEl.textContent : 'Memory'),
+                imgSrc: item.getAttribute('data-img') || item.querySelector('img')?.src,
+                element: item
+            };
+        });
+    }
 
+    let memoryDataList = getVisibleMemoryData();
     let currentMemoryIndex = 0;
 
     function updateModalContent(index) {
+        memoryDataList = getVisibleMemoryData();
         if (memoryDataList.length === 0) return;
         if (index < 0) index = memoryDataList.length - 1;
         if (index >= memoryDataList.length) index = 0;
@@ -60,9 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Attach click to each gallery item / memory box
-    galleryItems.forEach((item, idx) => {
+    galleryItems.forEach((item) => {
         item.addEventListener('click', () => {
-            openSlideshow(idx);
+            memoryDataList = getVisibleMemoryData();
+            const index = memoryDataList.findIndex(data => data.element === item);
+            openSlideshow(index >= 0 ? index : 0);
         });
     });
 

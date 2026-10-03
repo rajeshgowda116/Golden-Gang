@@ -1,0 +1,229 @@
+# 🎬 TrendCode – Project #1
+
+## Building a Friendship Photos Blog Website
+
+### 🎥 0:00 – 0:20 | Hook
+
+"Imagine... nimma friends jothe memories share madoke, photos upload madoke, likes and comments madoke, own website idre heg irutte?
+
+Instagram alla...
+Facebook alla...
+
+**Naane build madida Friendship Photos Blog Website!**
+
+Ivattu scratch inda ee complete project build madona."
+
+---
+
+### 🎥 0:20 – 0:50 | Channel Intro
+
+"Hello everyone!
+
+Welcome to **TrendCode**.
+
+Ee channel alli naavu real-world software projects build madthivi. Website projects, AI projects, Machine Learning projects, matthe full-stack applications.
+
+Every project scratch inda build madona.
+
+So if you're interested in coding, subscribe madi."
+
+---
+
+### 🎥 0:50 – 1:30 | Project Demo
+
+"First, result nodona."
+
+*(Show the completed website.)*
+
+"User register agbahudu.
+
+Login madbahudu.
+
+Friendship photos upload madbahudu.
+
+Caption hakbahudu.
+
+Likes madbahudu.
+
+Comments madbahudu.
+
+Profile create madbahudu.
+
+Matthe responsive design kuda ide."
+
+---
+
+### 🎥 1:30 – 2:00 | Why I Built This
+
+"Naanu coding practice madbeku antha simple project build madbahudittu.
+
+But instead, nange real-world project build madbeku anistu.
+
+Adakke ee Friendship Photos Blog Website create madide."
+
+---
+
+### 🎥 2:00 – 4:00 | UI Design
+
+"First homepage design madona.
+
+Navbar create madona.
+
+Hero section.
+
+Photo cards.
+
+Responsive layout.
+
+Modern color palette use madthivi.
+
+Goal simple...
+
+Professional look."
+
+---
+
+### 🎥 4:00 – 6:30 | Backend
+
+"Now backend start madona.
+
+Database connect madthivi.
+
+User registration create madona.
+
+Login system create madona.
+
+Password secure madthivi.
+
+Session maintain madthivi."
+
+---
+
+### 🎥 6:30 – 8:30 | Upload Feature
+
+"Iga interesting feature...
+
+Photo upload.
+
+User image select madtare.
+
+Caption enter madtare.
+
+Upload click madidre database alli save agutte.
+
+Matthe homepage alli instant display agutte."
+
+---
+
+### 🎥 8:30 – 10:00 | Like & Comment
+
+"Social media feel barbeku andre...
+
+Like feature add madona.
+
+Comment feature add madona.
+
+Iga friends photo upload madidmele...
+
+Bere users like matthe comment madbahudu."
+
+---
+
+### 🎥 10:00 – 11:30 | Search & Profile
+
+"Search option add madona.
+
+Profile page create madona.
+
+User upload madida ella photos profile alli display agutte."
+
+---
+
+### 🎥 11:30 – 12:30 | Final Demo
+
+"Let's test everything.
+
+Register.
+
+Login.
+
+Upload photo.
+
+Add caption.
+
+Like.
+
+Comment.
+
+Perfect!
+
+Everything working successfully."
+
+---
+
+### 🎥 12:30 – 13:00 | What I Learned
+
+"I project inda tumba important concepts kalitidde.
+
+Authentication.
+
+Database.
+
+CRUD Operations.
+
+Image Upload.
+
+Responsive Design.
+
+Frontend matthe Backend integration."
+
+---
+
+### 🎥 13:00 – 13:40 | Next Project
+
+"Idhu Project #1.
+
+Next project innu exciting irutte.
+
+Maybe AI chatbot...
+
+Athava Machine Learning prediction app...
+
+Comment madi next yenu build madbeku antha."
+
+---
+
+### 🎥 13:40 – End | Outro
+
+"If you enjoyed this project,
+
+Like madi 👍
+
+Comment madi 💬
+
+Subscribe madi ❤️
+
+Welcome to **TrendCode**...
+
+Where we build real-world software projects from scratch.
+
+See you in the next project.
+
+Bye!"
+Prompt:
+
+"A modern, colorful website homepage UI design mockup for a social/friendship platform called 'FriendColor'. Clean flat design style, wide desktop layout (1536x1024).
+
+Header: White navbar with a friend-group icon logo reading 'FriendColor' (Friend in black, Color in rainbow gradient text), navigation links (Home, Memories, Gallery, About, Friends, Contact) with Home underlined in yellow, a rounded search bar 'Search friends, memories...', sun icon, heart icon, and a purple-to-pink gradient rounded 'Join Us' button.
+
+Hero section: Soft pastel gradient background (cream yellow to pink to lavender). Left side: large bold headline 'Good Friends,' then 'Colorful Memories' with 'Colorful' in rainbow gradient text, a gray subheading about sharing moments, two pill buttons — a gradient 'Explore Memories' button and an outlined purple 'View Gallery' button. Right side: a rounded photo of 5 friends standing arm-in-arm facing a sunset with arms raised, hand-drawn doodle decorations (hearts, sparkles, squiggly lines) scattered around, and a handwritten-style label 'Better Together'.
+
+Color tag row: Six small rounded rectangle chips with icons and labels: Sunny Yellow (Happiness & Joy), Chill Blue (Loyalty & Trust), Fresh Green (Growth & Togetherness), Peachy Orange (Fun & Energy), Sweet Pink (Care & Support), Lavender Dream (Memories & Calm) — each in its own pastel background color.
+
+Featured Memories section: A 4-card grid, each with a photo of friends together, a colored badge label in the corner (Sunny Yellow, Chill Blue, Fresh Green, Peachy Orange), a bold title (Sunset & Smiles, Ride or Die, Growing Together, Crazy Nights), a short caption, and like/comment/share icons with counts. Below: a centered gradient 'View More Memories' button, then a 4-column feature strip on a pastel rainbow gradient background: Share Memories, Connect Friends, Express & Support, Grow Together, each with a circular icon.
+
+Sidebar (right column): A 'Trending This Week 🔥' card listing colored hashtags with post counts, an 'Online Friends' card showing 6 circular profile avatars with green online-status dots and names, and a purple-to-pink gradient quote card with white italic text: 'Good friends are like colors in life. They make the world beautiful!'
+
+Footer: Full-width rainbow gradient (orange to pink to blue) footer with rounded top corners, white text, logo + tagline on the left, columns for Quick Links, Explore, Support, and Follow Us with circular social icons (Instagram, Facebook, Twitter, YouTube), and a copyright line at the bottom.
+
+Overall style: playful, friendly, rounded corners everywhere, soft shadows, pastel-to-vibrant color palette, warm and social in tone, flat vector-icon illustrations mixed with real photography."
